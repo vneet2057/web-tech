@@ -21,7 +21,6 @@ if (isset($_GET['ledger_id'])) {
     $ledger_id = intval($_GET['ledger_id']);
     $entity = $_POST['entity'];
 
-
     $update_ledger_query = "UPDATE `ledger` SET `entity` = '$entity' WHERE `id` = $ledger_id";
     $stmt = $conn->query($update_ledger_query);
 
@@ -29,7 +28,6 @@ if (isset($_GET['ledger_id'])) {
         header('Location: /web-tech/index.php');
         exit();
     }
-    
 }
 // Close the database connection
 $conn->close();

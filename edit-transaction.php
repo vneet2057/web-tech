@@ -6,7 +6,7 @@ include './services/ledgerServices/fetchLedger.php';
 // Start output buffering to capture content for layout
 ob_start();
 ?>
-<form action="./services/transactionServices/addTransaction.php" method="post">
+<form action="./services/transactionServices/editLedger.php<?php echo '?transaction_id=' . $transaction_id ; ?>" method="post">
     <label for="">Ledger Name</label>
     <select name="ledger_id" id="ledger">
         <?php
