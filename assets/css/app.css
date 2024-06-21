@@ -1,0 +1,18 @@
+header{
+    background: white;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+    margin-bottom: 14px;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
